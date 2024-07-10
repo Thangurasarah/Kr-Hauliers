@@ -2,6 +2,7 @@ import { NextPage } from 'next';
 import React from 'react'
 
 import Image from 'next/image';
+import ServiceCard from './ServiceCards';
 
 const Hero:NextPage = () =>{
   return (
@@ -35,6 +36,28 @@ const Hero:NextPage = () =>{
         <h2 className="font-extrabold text-6xl flex justify-center pt-36">
         Service Options
         </h2>
+      </div>
+      <div className="container mx-auto pt-12 py-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+        <ServiceCard
+          title="Trucking Fleet Showcase"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris."
+          imageUrl="/trucking fleet.jpg"
+        />
+        <ServiceCard
+          title="Consultation Meeting"
+          description="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+          imageUrl="/consultation.jpg"
+        />
+        <ServiceCard
+          title="Quote Request Form"
+          description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          imageUrl="/quote.jpg"
+        />
+      </div>
+    </div>
+      <div>
+        <h2 className="text-blue text-4xl font-extrabold flex justify-center">Why choose KR Hauliers Limited?</h2>
       </div>
         </div>
   )
